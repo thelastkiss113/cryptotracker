@@ -1,9 +1,7 @@
 // src/components/Nav.jsx
-// Navigation component that links to different pages
+import { Link } from 'react-router-dom';
 
-import { Link } from "react-router-dom";
-
-export default function Nav() {
+const Nav = () => {
   return (
     <nav>
       <ul>
@@ -11,12 +9,11 @@ export default function Nav() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/currencies">Currencies</Link>
-        </li>
-        <li>
-          <Link to="/price/bitcoin">Bitcoin Price</Link>
+          <Link to="/prices">Prices</Link>
         </li>
       </ul>
     </nav>
   );
-}
+};
+
+export default Nav;
